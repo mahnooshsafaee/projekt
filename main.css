@@ -1,6 +1,6 @@
 
 .optimist {
-    width: 80%;
+    width: 100%;
     margin: auto;
     text-align: center;
     margin-top: 20px;   
@@ -13,35 +13,56 @@
 .optimist-card {
     display: flex;
     flex-direction: column;
-    gap:30px;   
+    gap:30px;  
+    position: relative; 
 }
-.managment {
+.button {
+    border-radius:37px;
+    background-color: #23A6F0;
+    width: 160px;
+    height: 40px;
+    position: relative;
+    top: 290px;
+    left: 10px;
+}
+.managment1 {
     background-image: url("./pic2/media\ bg-cover.png");
     background-size: cover;
     background-position: center;
-    height: 500px;  
-}
-.managment button {
-    position:relative;
+    height: 700px;
+    position: relative;
+ }
+ .tips {position: absolute;
     top: 300px;
-    left: -150px;
-}
-.absolut {
+    left: 0px;
     display: flex;
     flex-direction: column;
-}
-.managment button {
-    border-radius:37px;
-    background-color: #23A6F0;
-}
-.optimist-card :nth-child(2) {
+ }
+.managment2 {
     background-image: url("./pic2/media\ bg-cover\ \(1\).png") ;
+    background-size: cover;
+    background-position: center;
+    height: 700px;  
 }
-.optimist-card :nth-child(3) {
+.managment3 {
     background-image: url("./pic2/media\ bg-cover\ \(2\).png");
+    background-size: cover;
+    background-position: center;
+    height: 700px;  
 }
-.optimist-card :nth-child(4) {
+.managment4 {
     background-image: url("./pic2/media\ bg-cover\ \(3\).png");
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+}
+.tax {
+    
+    color: #FFFFFF;
+}
+.life {
+    max-width:200px;
+    color: #FFFFFF;
 }
 @media ( min-width:1024px ){
     .optimist-card {
