@@ -1,76 +1,125 @@
-
-.optimist {
-    width: 100%;
-    margin: auto;
+.work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    margin-top: 20px;   
+    margin-bottom: 20px;
+    margin-top: 50px;
 }
-.optimist span {
+
+.work :nth-child(1) {
+    display:none;
+}
+
+.work :nth-child(2) {
+    max-width: 212px;
     font-size: 40px;
     text-align: center;
-    font-weight:bold;
+    font-weight: bold;
 }
-.optimist-card {
+
+.work :nth-child(3) {
+    max-width: 262px;
+}
+
+.lovecards {
+    width: 80%;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    gap:30px;  
-    position: relative; 
+    gap: 30px;
 }
-.button {
-    border-radius:37px;
-    background-color: #23A6F0;
-    width: 160px;
-    height: 40px;
-    position: relative;
-    top: 290px;
-    left: 10px;
-}
-.managment1 {
-    background-image: url("./pic2/media\ bg-cover.png");
-    background-size: cover;
+
+.workcard1 {
+    background-image: url(./pic2/media\ bg-cover.png);
+    background-repeat: no-repeat;
     background-position: center;
-    height: 700px;
+    background-size: cover;
     position: relative;
- }
- .tips {position: absolute;
-    top: 300px;
-    left: 0px;
+    height: 452px;
+}
+
+.work1 {
     display: flex;
     flex-direction: column;
- }
-.managment2 {
-    background-image: url("./pic2/media\ bg-cover\ \(1\).png") ;
-    background-size: cover;
-    background-position: center;
-    height: 700px;  
+    justify-content: flex-start;
+    margin-left: 27px;
+    margin-top: 250px;
 }
-.managment3 {
-    background-image: url("./pic2/media\ bg-cover\ \(2\).png");
-    background-size: cover;
-    background-position: center;
-    height: 700px;  
-}
-.managment4 {
-    background-image: url("./pic2/media\ bg-cover\ \(3\).png");
-    background-size: cover;
-    background-position: center;
-    height: 700px;
-}
-.tax {
     
+.work1 :nth-child(1) {
+    font-size: 14px;
+    color: #ffffff;
+
+}
+
+.work1 :nth-child(2) {
+    font-size: 24px;
     color: #FFFFFF;
+    max-width: 282px;
 }
-.life {
-    max-width:200px;
+
+.work1 :nth-child(3) {
+    border-radius: 37px;
+    background-color: #23A6F0;
+    width: 93px;
+    height: 22px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
     color: #FFFFFF;
+    margin-top: 5px;
 }
-@media ( min-width:1024px ){
-    .optimist-card {
-        display: flex;
-        flex-direction: row;
-        gap:20px;
-    }
-    .together {
-        display: none;
-    }
+
+.workcard2 {
+    background-image: url(./pic2/media\ bg-cover\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 452px;   
 }
+
+.workcard3 {
+    background-image: url(./pic2/media\ bg-cover\ \(2\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 452px;
+}
+
+.workcard4 {
+    background-image: url(./pic2/media\ bg-cover\ \(3\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 452px;
+}
+
+@media (min-width:1024px){
+    .lovecards {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+     }
+     
+     .work :nth-child(2) {
+         display: none;
+     }
+
+     .work :nth-child(1) {
+         display: inline;
+         font-size: 40px;
+         font-weight: bold;
+     }
+     
+     .work :nth-child(3) {
+        max-width: 470px;
+        font-size: 14px;
+        margin-bottom: 10px;
+     }
+    
+}
+   
