@@ -116,6 +116,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    gap: 20px;
 }
 
 .pri :nth-child(1) {
@@ -140,6 +141,8 @@
 .newmain {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
     margin-bottom: 10px;
 }
@@ -153,13 +156,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   gap:30px;  
-   border: 1px solid color:#23A6F0;
+    gap:30px;  
+    width: 327px;
+    height: 500px;
+    border: 1px solid  #23A6F0;
+    border-radius: 10px;
+    ;
 }
 
 .all {
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+.all> span {
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .permont {
@@ -167,18 +180,44 @@
     flex-direction: column;
 }
 
+.permont :nth-child(1) {
+    font-weight: bold;
+    font-size: 16px;
+}
+
 .ul {
     list-style: url(./assets/icn-circle\ circle-xs\ secondary-color-1.png);
     margin-bottom: 10px;
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+}
+
+.ul :nth-child(4){
+    list-style: url(./assets/icn-circle\ circle-xs\ mute.png);
+
+}
+
+.ul :nth-child(5){
+    list-style: url(./assets/icn-circle\ circle-xs\ mute.png);
 }
 
 .free {
     background-color: #23A6F0;
+    border-radius: 5px;
     width: 150px;
-    height: 30px;
+    height: 25px;
     text-align: center;
-    padding-top: 25px;
+    display: none;
+}
+
+.free1 {
+    background-color: #23A6F0;
+    border-radius: 5px;
+    width: 150px;
+    height: 25px;
+    text-align: center;
 }
 
 @media (min-width:1024px){
@@ -205,6 +244,14 @@
      .new {
          display: grid;
          grid-template-columns: repeat(3,1fr);
+     }
+     
+     .free {
+         display: inline;
+     }
+
+     .free1 {
+         display: none;
      }
     
 }
